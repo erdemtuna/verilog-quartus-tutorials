@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/half_adder/simulation/qsim
+vhalf_adder
+Z1 !s110 1553022201
+!i10b 1
+!s100 5mF:OE;[UJIAf4Th`=cc42
+IR@HaIfk[WgA42D`l[RDVS3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1553022200
+8half_adder.vo
+Fhalf_adder.vo
+L0 32
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1553022201.479000
+!s107 half_adder.vo|
+!s90 -work|work|half_adder.vo|
+!i113 1
+Z4 o-work work
+vhalf_adder_vlg_check_tst
+R1
+!i10b 1
+!s100 Y=SaPl[PnLXR^VC64Q11U0
+Ig^RkPUONfjNUiSC`6;Hla1
+R2
+R0
+Z5 w1553022198
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R3
+r1
+!s85 0
+31
+Z8 !s108 1553022201.541000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vhalf_adder_vlg_sample_tst
+R1
+!i10b 1
+!s100 V32J67XPP<:3fafzG^@n@3
+IemE_5_7J6O`Yo7=VK72Eo3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vhalf_adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 F7442jDGcKOIkgdC13DMb2
+I?l<Cj9Wmk9XnMOcAQgU^R3
+R2
+R0
+R5
+R6
+R7
+L0 182
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

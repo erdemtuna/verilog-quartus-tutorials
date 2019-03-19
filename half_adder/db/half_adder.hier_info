@@ -1,0 +1,9 @@
+|half_adder
+sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst2.IN1
+carry <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

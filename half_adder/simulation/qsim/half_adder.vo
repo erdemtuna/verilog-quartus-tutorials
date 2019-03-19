@@ -1,0 +1,139 @@
+// Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
+
+// DATE "03/19/2019 22:03:20"
+
+// 
+// Device: Altera EP4CGX150CF23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module half_adder (
+	sum,
+	a,
+	b,
+	carry);
+output 	sum;
+input 	a;
+input 	b;
+output 	carry;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \sum~output_o ;
+wire \carry~output_o ;
+wire \a~input_o ;
+wire \b~input_o ;
+wire \inst~combout ;
+wire \inst2~combout ;
+
+
+cycloneiv_io_obuf \sum~output (
+	.i(\inst~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sum~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sum~output .bus_hold = "false";
+defparam \sum~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiv_io_obuf \carry~output (
+	.i(\inst2~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\carry~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \carry~output .bus_hold = "false";
+defparam \carry~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \a~input (
+	.i(a),
+	.ibar(gnd),
+	.o(\a~input_o ));
+// synopsys translate_off
+defparam \a~input .bus_hold = "false";
+defparam \a~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \b~input (
+	.i(b),
+	.ibar(gnd),
+	.o(\b~input_o ));
+// synopsys translate_off
+defparam \b~input .bus_hold = "false";
+defparam \b~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_lcell_comb inst(
+// Equation(s):
+// \inst~combout  = \a~input_o  $ (\b~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\a~input_o ),
+	.datad(\b~input_o ),
+	.cin(gnd),
+	.combout(\inst~combout ),
+	.cout());
+// synopsys translate_off
+defparam inst.lut_mask = 16'h0FF0;
+defparam inst.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb inst2(
+// Equation(s):
+// \inst2~combout  = (\a~input_o  & \b~input_o )
+
+	.dataa(\a~input_o ),
+	.datab(\b~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst2~combout ),
+	.cout());
+// synopsys translate_off
+defparam inst2.lut_mask = 16'h8888;
+defparam inst2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign sum = \sum~output_o ;
+
+assign carry = \carry~output_o ;
+
+endmodule

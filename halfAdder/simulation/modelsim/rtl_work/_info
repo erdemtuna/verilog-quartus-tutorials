@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/simulation/modelsim
+vhalfAdder
+!s110 1553023455
+!i10b 1
+!s100 SN`=haN=TFQ<6a5F4=mZP2
+IXm3Q9nXf5R873I3YPFCRe0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1553022474
+8C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v
+FC:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v
+L0 1
+Z2 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1553023455.551000
+!s107 C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder|C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder
+nhalf@adder
+vhalfAdder_test
+!s110 1553023463
+!i10b 1
+!s100 7OzR08DRnXcPoI]3GO9[63
+Ib^6l[eVM1A67Y4MlMG8Da1
+R1
+R0
+w1553023427
+8C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v
+FC:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1553023463.511000
+!s107 C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v|
+!i113 1
+o-work work
+nhalf@adder_test

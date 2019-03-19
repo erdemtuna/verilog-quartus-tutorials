@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/half_adder/half_adder.bdf
+source_file = 1, C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/half_adder/Waveform.vwf
+source_file = 1, C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/half_adder/db/half_adder.cbx.xml
+design_name = half_adder
+instance = comp, \sum~output , sum~output, half_adder, 1
+instance = comp, \carry~output , carry~output, half_adder, 1
+instance = comp, \a~input , a~input, half_adder, 1
+instance = comp, \b~input , b~input, half_adder, 1

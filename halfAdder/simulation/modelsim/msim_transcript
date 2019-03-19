@@ -1,0 +1,52 @@
+# Reading D:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do halfAdder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder {C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:24:15 on Mar 19,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder" C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder.v 
+# -- Compiling module halfAdder
+# 
+# Top level modules:
+# 	halfAdder
+# End time: 22:24:15 on Mar 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:24:23 on Mar 19,2019
+# vlog -reportprogress 300 -work work C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/halfAdder/halfAdder_test.v 
+# -- Compiling module halfAdder_test
+# 
+# Top level modules:
+# 	halfAdder_test
+# End time: 22:24:23 on Mar 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.halfAdder_test
+# vsim -gui "+altera" -l msim_transcript -do "halfAdder_run_msim_rtl_verilog.do" 
+# Start time: 22:24:33 on Mar 19,2019
+# Loading work.halfAdder_test
+# Loading work.halfAdder
+add wave -position end  sim:/halfAdder_test/carry_out
+add wave -position end  sim:/halfAdder_test/a_in
+add wave -position end  sim:/halfAdder_test/b_in
+add wave -position end  sim:/halfAdder_test/sum_out
+add wave -position end  sim:/halfAdder_test/carry_out
+add wave -position end  sim:/halfAdder_test/testvectors
+add wave -position end  sim:/halfAdder_test/i
+run
+restart
+run
+# End time: 22:44:26 on Mar 19,2019, Elapsed time: 0:19:53
+# Errors: 0, Warnings: 0

@@ -1,0 +1,60 @@
+# Reading D:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ff_lib_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib {C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib/ff_lib.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 00:13:48 on Mar 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib" C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib/ff_lib.v 
+# -- Compiling module ff_lib
+# -- Compiling module JK_ff
+# -- Compiling module SR_ff
+# -- Compiling module D_ff
+# -- Compiling module T_ff
+# 
+# Top level modules:
+# 	ff_lib
+# 	JK_ff
+# 	SR_ff
+# 	D_ff
+# 	T_ff
+# End time: 00:13:48 on Mar 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib/JK_ff_tb.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 00:14:01 on Mar 22,2019
+# vlog -reportprogress 300 -work work C:/Users/Erdem/Desktop/all-projects-ws/verilog-quartus-tutorials/ff_lib/JK_ff_tb.v 
+# -- Compiling module JK_ff_tb
+# 
+# Top level modules:
+# 	JK_ff_tb
+# End time: 00:14:01 on Mar 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.JK_ff_tb
+# vsim -gui "+altera" -l msim_transcript -do "ff_lib_run_msim_rtl_verilog.do" 
+# Start time: 00:14:07 on Mar 22,2019
+# Loading work.JK_ff_tb
+# Loading work.JK_ff
+add wave -position end  sim:/JK_ff_tb/J_in
+add wave -position end  sim:/JK_ff_tb/K_in
+add wave -position end  sim:/JK_ff_tb/CLK
+add wave -position end  sim:/JK_ff_tb/rst_in
+add wave -position end  sim:/JK_ff_tb/Q_out
+add wave -position end  sim:/JK_ff_tb/testvectors
+add wave -position end  sim:/JK_ff_tb/i
+run
+restart
+run
+# End time: 00:18:00 on Mar 22,2019, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 0
